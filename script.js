@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     setupPhotoModal();
     setupPlayButtonModal();
     setupHamburgerMenu();
-    setupMarqueeAnimation(); 
+    setupMarqueeAnimation();
+    setupContactForm();
 });
 
 // ============================================
@@ -74,27 +75,22 @@ function setupMarqueeAnimation() {
     posterStrip.addEventListener('animationiteration', function() {
         console.log('Animation iteration fired');
     
-        // Pause the animation
         posterStrip.style.animationPlayState = 'paused';
         
-        // Reset opacity to 0
         posterStrip.style.opacity = '0';
         posterStrip.style.transition = 'none';
         
-        // Force a reflow
         void posterStrip.offsetWidth;
         
-        // Trigger fade-in with transition
         setTimeout(() => {
             posterStrip.style.transition = 'opacity 1.5s ease-in';
             posterStrip.style.opacity = '1';
             console.log('Fade-in triggered');
             
-            // Resume animation after fade completes
             setTimeout(() => {
                 posterStrip.style.animationPlayState = 'running';
                 console.log('Animation resumed');
-            }, 1500); // Match the fade duration
+            }, 1500);
         }, 50);
     });
 }
@@ -121,7 +117,6 @@ function setupPhotoModal() {
             modal.style.display = 'flex';
             modalImg.src = img.src;
             
-            // Only show caption if it exists and has content
             if (modalCaption && caption && caption.textContent.trim()) {
                 modalCaption.innerHTML = caption.innerHTML;
                 modalCaption.style.display = 'block';
@@ -131,7 +126,6 @@ function setupPhotoModal() {
             
             document.body.style.overflow = 'hidden';
             
-            // Trigger animation
             setTimeout(() => {
                 modal.classList.add('active');
                 modalImg.classList.add('active');
@@ -182,25 +176,19 @@ function setupPlayButtonModal() {
 
     videoContainers.forEach(container => {
         container.addEventListener('click', function(e) {
-            // DESKTOP: Open modal
             if (window.innerWidth >= 969) {
                 e.preventDefault();
                 const videoId = this.dataset.videoId;
                 
-                // Set iframe src
                 modalFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
                 
-                // Show modal
                 modal.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
                 
-                // Trigger animation
                 setTimeout(() => {
                     modal.classList.add('active');
                 }, 10);
-            } 
-            // MOBILE: Open YouTube link
-            else {
+            } else {
                 e.preventDefault();
                 const link = this.querySelector('a.play-button-overlay');
                 if (link) {
@@ -210,8 +198,6 @@ function setupPlayButtonModal() {
         });
     });
 
-
-    // Close button
     const closeBtn = modal.querySelector('.modal-close');
     if (closeBtn) {
         closeBtn.addEventListener('click', function(e) {
@@ -220,14 +206,12 @@ function setupPlayButtonModal() {
         });
     }
 
-    // Click outside to close
     modal.addEventListener('click', function(e) {
         if (e.target === modal) {
             closeModal();
         }
     });
 
-    // Escape key to close
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             closeModal();
@@ -304,5 +288,46 @@ function setupHamburgerMenu() {
         if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
             closeMenu();
         }
+    });
+}
+
+// ============================================
+// CONTACT FORM SUBMISSION
+// ============================================
+function setupContactForm() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        const data = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+            if (response.ok) {
+                submitBtn.textContent = 'Message Sent!';
+                form.reset();
+                if (typeof grecaptcha !== 'undefined') {
+                    grecaptcha.reset();
+                }
+            } else {
+                submitBtn.textContent = 'Error — Try Again';
+                submitBtn.disabled = false;
+            }
+        })
+        .catch(() => {
+            submitBtn.textContent = 'Error — Try Again';
+            submitBtn.disabled = false;
+        });
     });
 }
