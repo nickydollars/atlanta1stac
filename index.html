@@ -4,36 +4,783 @@
     <meta name="google-site-verification" content="ow7C8IVrOvUcRCRyw34U4SYyTaEQ3t9utulpt8sji4A" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st AC Nick Montalvo | ICG Local 600</title>
+    <title>Nick Montalvo | Otto Nemenz International</title>
     <link rel="canonical" href="https://atlanta1stac.com/" />
-    
-    <!-- Standard favicons -->
+
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-
-    <!-- Legacy fallback -->
     <link rel="shortcut icon" href="favicon.ico">
-    <meta name="description" content="Atlanta-based 1st Assistant Camera. Member of ICG Local 600. Trusted by Directors of Photography, Producers, and UPMs for sharp focus and collaborative teamwork on film and television productions.">
+
+    <meta name="description" content="Nick Montalvo — Camera industry veteran and representative for Otto Nemenz International. Serving productions in Los Angeles, Atlanta, and New York City.">
     <meta name="format-detection" content="telephone=no, date=no, email=no, address=no">
-    
-    <!-- Open Graph Meta Tags for Link Previews -->
-    <meta property="og:title" content="1st AC Nick Montalvo | ICG Local 600">
-    <meta property="og:description" content="1st Assistant Camera based in Atlanta. ICG Local 600. With over 20 years behind the camera, he's built his career on one principle: the best images come from teamwork.">
-    <meta property="og:image" content="https://atlanta1stac.com/photo12.jpg">
+
+    <meta property="og:title" content="Nick Montalvo | Otto Nemenz International">
+    <meta property="og:description" content="20+ years as a 1st AC. Now your contact at Otto Nemenz International — LA, Atlanta, and NYC.">
+    <meta property="og:image" content="https://atlanta1stac.com/nmontalvo.jpg">
     <meta property="og:url" content="https://atlanta1stac.com" />
     <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="1st AC Nick Montalvo | ICG Local 600">
-    <meta name="twitter:description" content="1st Assistant Camera based in Atlanta. ICG Local 600. With over 20 years behind the camera, he's built his career on one principle: the best images come from teamwork.">
-    <meta name="twitter:image" content="https://atlanta1stac.com/photo12.jpg">
-    
+    <meta name="twitter:title" content="Nick Montalvo | Otto Nemenz International">
+    <meta name="twitter:description" content="20+ years as a 1st AC. Now your contact at Otto Nemenz International — LA, Atlanta, and NYC.">
+    <meta name="twitter:image" content="https://atlanta1stac.com/nmontalvo.jpg">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <style>
+
+        .nav-social {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-right: 1.5rem;
+            color: #888;
+        }
+
+        .nav-social a {
+            color: #888;
+            transition: color 0.2s;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-social a:hover {
+            color: var(--accent-gold);
+        }
+    /* ============================================
+        HERO — NEW ONI PORTRAIT LAYOUT
+        ============================================ */
+        .logo-oni .name-line {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        .logo-oni .company-line {
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #888;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .logo-oni-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+        }
+
+        .logo-oni {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .oni-nav-logo {
+            height: 48px !important;
+            width: auto !important;
+            max-width: none !important;
+            opacity: 0.9;
+        }
+        
+           .hero-oni {
+            min-height: 100vh;
+            padding-top: 90px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #111111 40%, #0d0d0d 100%);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Subtle background texture lines */
+        .hero-oni::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 120px,
+                    rgba(245, 197, 24, 0.025) 120px,
+                    rgba(245, 197, 24, 0.025) 121px
+                );
+            pointer-events: none;
+        }
+
+        .hero-oni-row1 {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 40px 0 40px;
+            gap: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* PORTRAIT — cutout effect with gradient fade at bottom */
+
+        .oni-portrait-wrap {
+            flex-shrink: 0;
+            position: relative;
+            width: 300px;
+            align-self: flex-end;
+        }
+
+        .oni-portrait-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            object-position: center top;
+            -webkit-mask-image: linear-gradient(
+                to bottom,
+                black 0%,
+                black 60%,
+                transparent 100%
+            );
+            mask-image: linear-gradient(
+                to bottom,
+                black 0%,
+                black 60%,
+                transparent 100%
+            );
+            filter: contrast(1.05) brightness(1.02);
+        }
+
+        /* Glow ring behind portrait */
+        .oni-portrait-wrap::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(ellipse, rgba(245, 197, 24, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        /* HERO TEXT */
+        .oni-hero-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .oni-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .oni-hero-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-weight: 400;
+            line-height: 0.95;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+            letter-spacing: 2px;
+        }
+
+        .oni-hero-name span {
+            color: var(--accent-gold);
+        }
+
+        .oni-hero-tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+            font-weight: 300;
+            font-style: normal;
+            color: #cccccc;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+
+        .oni-hero-tagline strong {
+            color: #ffffff;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .oni-locations {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .oni-loc-pill {
+            background: rgba(245, 197, 24, 0.1);
+            border: 1px solid rgba(245, 197, 24, 0.3);
+            color: var(--accent-gold);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 0.4rem 1rem;
+            border-radius: 2px;
+        }
+
+        .oni-hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            background: var(--accent-gold);
+            color: #000 !important;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 2px;
+            align-self: flex-start;
+            transition: all 0.3s ease;
+            animation: contactGlow 2s ease-in-out infinite;
+        }
+
+        .oni-hero-cta:hover {
+            background: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* MARQUEE ROW */
+        .hero-marquee-row {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            margin-top: 0;
+        }
+
+        /* IMDB button row */
+        .imdb-button-container {
+            display: flex;
+            justify-content: center;
+            padding: 1.5rem 0 2rem;
+        }
+
+        /* ============================================
+           ONI ANNOUNCEMENT SECTION
+           ============================================ */
+        .oni-announcement-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 60px;
+            align-items: start;
+            text-align: left;
+        }
+
+        .oni-announcement-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .oni-announcement-photos {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            position: sticky;
+            top: 100px;
+        }
+
+        .oni-announcement-photos img {
+            width: 100%;
+            border-radius: 3px;
+            display: block;
+        }
+
+        @media (max-width: 968px) {
+            .oni-announcement-inner {
+                grid-template-columns: 1fr;
+            }
+            .oni-announcement-photos {
+                position: static;
+                flex-direction: row;
+            }
+            .oni-announcement-photos img {
+                width: 50%;
+            }
+        }
+
+        .oni-announcement-badge {
+            display: inline-block;
+            background: rgba(245, 197, 24, 0.1);
+            border: 1px solid rgba(245, 197, 24, 0.4);
+            color: var(--accent-gold);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2px;
+            margin-bottom: 2.5rem;
+        }
+
+        .oni-announcement-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 1.0;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+
+        .oni-announcement-title em {
+            color: var(--accent-gold);
+            font-style: normal;
+        }
+
+        .oni-announcement-title em {
+            color: var(--accent-gold);
+            font-style: italic;
+        }
+
+        .oni-announcement-body {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #cccccc;
+            font-weight: 300;
+        }
+
+        .oni-announcement-body strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .oni-announcement-sig-img {
+            height: 120px;
+            width: 120px;
+            object-fit: contain;
+            margin-top: 2rem;
+            display: block;
+            margin-left: auto;
+            margin-right: 2rem;
+            filter: invert(1);
+        }
+        /* ============================================
+           ONI INFO BAND
+           ============================================ */
+        .oni-band {
+            background: var(--accent-gold);
+            padding: 60px 20px 80px 20px;
+        }
+
+        .oni-band-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .oni-band-about {
+            color: #000;
+        }
+
+        .oni-band-logo {
+            height: 200px !important;
+            width: auto !important;
+            max-width: none !important;
+            filter: invert(1);
+            margin-bottom: 0.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .oni-band-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .oni-band-heading {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2rem, 3.5vw, 3rem);
+            font-weight: 400;
+            color: #000;
+            line-height: 1.05;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+        }
+        .oni-band-body {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: rgba(0,0,0,0.75);
+            font-weight: 400;
+        }
+
+        .oni-band-divider {
+            width: 1px;
+            height: 120px;
+            background: rgba(0,0,0,0.2);
+        }
+
+        .oni-band-contact {
+            text-align: right;
+        }
+
+        .oni-band-contact .oni-band-label {
+            text-align: right;
+        }
+
+        .oni-band-email {
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: opacity 0.2s;
+            word-break: break-all;
+        }
+
+        .oni-band-email:hover {
+            opacity: 0.65;
+        }
+
+        .oni-band-reach {
+            font-size: 0.85rem;
+            color: rgba(0,0,0,0.6);
+            margin-bottom: 1.5rem;
+        }
+
+        .oni-band-offices {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.3rem;
+        }
+
+        .oni-office-tag {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.6);
+            background: rgba(0,0,0,0.1);
+            padding: 0.25rem 0.6rem;
+            border-radius: 2px;
+        }
+
+        /* ============================================
+           CAREER / ABOUT SECTION  (replaces old About)
+           ============================================ */
+        .career-section {
+            background: var(--primary-bg);
+            padding: 90px 20px;
+        }
+
+        .career-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .career-text .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.6rem, 3vw, 2.4rem);
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .career-gold-rule {
+            width: 50px;
+            height: 3px;
+            background: var(--accent-gold);
+            margin-bottom: 2rem;
+        }
+
+        .career-bio p {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            color: #bbbbbb;
+            margin-bottom: 1.25rem;
+            font-weight: 300;
+        }
+
+        .career-bio p strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .career-bio p em {
+            color: var(--accent-gold);
+            font-style: italic;
+        }
+
+        .career-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-block {
+            border-left: 2px solid var(--accent-gold);
+            padding-left: 1rem;
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #888;
+            margin-top: 0.3rem;
+        }
+
+        /* Right column: featured credits as cards */
+        .career-credits-col .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.2rem, 2vw, 1.6rem);
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .career-credits-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .credit-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.85rem 1rem;
+            background: #111111;
+            border-left: 3px solid var(--accent-gold);
+            border-radius: 0 3px 3px 0;
+            gap: 1rem;
+        }
+
+        .credit-row-left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .credit-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .credit-meta {
+            font-size: 0.72rem;
+            color: #888;
+            letter-spacing: 0.5px;
+        }
+
+        .credit-badge {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            white-space: nowrap;
+        }
+
+        .imdb-inline-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            color: var(--accent-gold);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(245, 197, 24, 0.3);
+            padding-bottom: 2px;
+            transition: all 0.2s;
+        }
+
+        .imdb-inline-link:hover {
+            border-bottom-color: var(--accent-gold);
+        }
+
+        /* ============================================
+           FEATURED WORK — same structure, updated heading
+           ============================================ */
+        .featured-work .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .featured-work {
+            padding-top: 80px;
+        }
+
+        .play-button-overlay {
+            position: absolute !important;
+            bottom: 12px !important;
+            right: 12px !important;
+            top: auto !important;
+            left: auto !important;
+            transform: none !important;
+            background: transparent !important;
+            color: #ffffff;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 !important;
+            border: none !important;
+            border-radius: 0;
+            transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            width: auto !important;
+            height: auto !important;
+        }
+
+        .play-button-overlay:hover {
+            color: var(--accent-gold);
+            background: transparent !important;
+        }
+
+        /* ============================================
+           BTS SECTION — heading update only
+           ============================================ */
+        .bts-slideshow .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        /* ============================================
+           CONTACT SECTION — updated fields
+           ============================================ */
+        .contact .section-subtitle {
+            color: #999;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 968px) {
+            .hero-oni-row1 {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 20px 0;
+                text-align: center;
+            }
+
+            .oni-portrait-wrap {
+                flex-shrink: 0;
+                position: relative;
+                width: 300px;
+                align-self: flex-end;
+            }
+
+            .oni-portrait-wrap img {
+                -webkit-mask-image: linear-gradient(
+                    to bottom,
+                    black 0%,
+                    black 70%,
+                    transparent 100%
+                );
+                mask-image: linear-gradient(
+                    to bottom,
+                    black 0%,
+                    black 70%,
+                    transparent 100%
+                );
+            }
+
+            .oni-hero-text {
+                flex: 1;
+                padding: 0 0 20px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .oni-hero-cta {
+                align-self: center;
+            }
+
+            .oni-locations {
+                justify-content: center;
+            }
+
+            .oni-band-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .oni-band-contact {
+                text-align: center;
+            }
+
+            .oni-band-contact .oni-band-label {
+                text-align: center;
+            }
+
+            .oni-band-offices {
+                align-items: center;
+            }
+
+            .oni-band-divider {
+                display: none;
+            }
+
+            .career-inner {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -42,35 +789,43 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-KTRYM4Y301');
 </script>
 
 <body>
-        <!-- Visually Hidden H1 for SEO -->
-    <h1 class="visually-hidden">
-    Nick Montalvo | 1st Assistant Camera | Atlanta
-    </h1>
+    <h1 class="visually-hidden">Nick Montalvo — Representative, Otto Nemenz International | Los Angeles · Atlanta · New York</h1>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo-section">
-                <div class="logo">
-                    <span>NICK MONTALVO, 1st AC</span>
+                <div class="logo-oni">
+                    <img src="logo_bw.png" alt="Otto Nemenz International" class="oni-nav-logo">
+                    <div class="logo-oni-inner">
+                        <span class="name-line">NICK MONTALVO</span>
+                        <span class="company-line">Otto Nemenz International</span>
+                    </div>
                 </div>
-                <div class="location-info">Atlanta • ICG Local 600</div>
             </div>
             <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Featured</a></li>
+                <li><a href="#announcement">News</a></li>
                 <li><a href="#bts">BTS</a></li>
-                <li class="cta-btn-wrapper"><a href="#contact" class="cta-btn">Contact</a></li>
-            </ul>
+                <li><a href="#work">Credits</a></li>
+                <li class="cta-btn-wrapper"><a href="#oni-band" class="cta-btn">Contact</a></li>
+            <div class="nav-social">
+                <a href="https://www.linkedin.com/in/nick-montalvo" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/atlanta1stac" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+        </div>
         </div>
     </nav>
 
@@ -78,612 +833,496 @@
     <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
     <nav class="mobile-nav" id="mobileNav">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Featured</a></li>
+            <li><a href="#announcement">News</a></li>
             <li><a href="#bts">BTS</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#work">Credits</a></li>
+            <li><a href="#oni-band">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-split">
-        <div class="hero-row-1">
-            <div class="hero-left">
-                <img src="photo12.jpg" alt="Nick Montalvo" width="1966" height="2236" class="camera-dude">
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
+    <section class="hero-oni">
+        <div class="hero-oni-row1">
+
+            <!-- Portrait -->
+            <div class="oni-portrait-wrap">
+                <img src="nmontalvo.jpg" alt="Nick Montalvo, Otto Nemenz International" width="720" height="900">
             </div>
-        
-            <div class="hero-right">         
-            
-                <!-- Poster Marquee with Drag/Touch Scrolling -->
-                <div class="poster-strip-container">
-                    <div class="poster-strip marquee">
-                        <div class="poster-spacer"></div>
-                        
-                        <div class="poster-frame">
-                            <img src="Murdaugh.jpg" alt="Murdaugh" width="810" height="1200">
-                            <div class="poster-caption">Murdaugh: Death in the Family, <em>Hulu</em></div>
-                        </div>
 
-                        <div class="poster-frame">
-                            <img src="Kindred.jpeg" alt="Kindred" width="964" height="1400">
-                            <div class="poster-caption">Kindred, <em>Hulu/FX</em></div>
-                        </div>
-                        
-                        <div class="poster-frame">
-                            <img src="DMZ.jpeg" alt="DMZ" width="948" height="1394">
-                            <div class="poster-caption">DMZ, <em>HBO Max</em></div>
-                        </div>
+            <!-- Text -->
+            <div class="oni-hero-text">
+                <h2 class="oni-hero-name"><i>Nicky&nbsp;Dollars</i><br><span>is at Otto&nbsp;Nemenz</span></h2>
+                <p class="oni-hero-tagline">Twelve years pulling focus--<br><strong>now he's keeping your production equipped.</strong></p>
 
-                        <div class="poster-frame">
-                            <img src="Naomi.jpeg" alt="Naomi" width="1122" height="1398">
-                            <div class="poster-caption">Naomi, <em>The CW</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="Brockmire.jpeg" alt="Brockmire" width="971" height="1382">
-                            <div class="poster-caption">Brockmire, <em>IFC</em></div>
-                        </div>
-                        
-                        <div class="poster-frame">
-                            <img src="MiracleWorkers.jpeg" alt="Miracle Workers" width="1040" height="1556">
-                            <div class="poster-caption">Miracle Workers, <em>TBS</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="DeadMoney.jpg" alt="Dead Money" width="974" height="1388">
-                            <div class="poster-caption">Dead Money, <em>Hulu</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="Renaissance-Beyonce.jpeg" alt="Renaissance" width="600" height="927">
-                            <div class="poster-caption">Renaissance: A Film by Beyoncé, <em>Theatrical</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="Wakanda.jpeg" alt="Wakanda Forever" width="946" height="1398">
-                            <div class="poster-caption">Black Panther: Wakanda Forever, <em>Marvel Studios</em></div>
-                        </div>
-                        
-                        <div class="poster-frame">
-                            <img src="TheOval.jpg" alt="The Oval" width="1920" height="2880">
-                            <div class="poster-caption">The Oval, <em>BET+</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="Dynasty.jpeg" alt="Dynasty" width="938" height="1398">
-                            <div class="poster-caption">Dynasty, <em>The CW</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="MeaCulpa.jpeg" alt="Mea Culpa" width="900" height="1357">
-                            <div class="poster-caption">Tyler Perry's Mea Culpa, <em>Netflix</em></div>
-                        </div>
-                        
-                        <div class="poster-frame">
-                            <img src="Them.jpeg" alt="Them" width="932" height="1400">
-                            <div class="poster-caption">Them, <em>Prime Video</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="SNL.jpeg" alt="Saturday Night Live" width="960" height="1440">
-                            <div class="poster-caption">Saturday Night Live, <em>NBC</em></div>
-                        </div>
-                        
-                        <div class="poster-frame">
-                            <img src="JustBeyond.jpeg" alt="Just Beyond" width="954" height="1366">
-                            <div class="poster-caption">Just Beyond, <em>Disney+</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="Safety.jpeg" alt="Safety" width="940" height="1390">
-                            <div class="poster-caption">Safety, <em>Disney+</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="ComeSunday.jpeg" alt="Come Sunday" width="778" height="1220">
-                            <div class="poster-caption">Come Sunday, <em>Netflix</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="StatenIslandSummer.jpeg" alt="Staten Island Summer" width="1052" height="1480">
-                            <div class="poster-caption">Staten Island Summer, <em>Paramount</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="RunAllNight.jpeg" alt="Run All Night" width="972" height="1428">
-                            <div class="poster-caption">Run All Night, <em>Warner Bros</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="MargaretCho.jpeg" alt="Margaret Cho" width="1000" height="1333">
-                            <div class="poster-caption">Margaret Cho: PsyCHO, <em>Showtime</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="comedyunderground.jpeg" alt="Comedy Underground" width="1152" height="1536">
-                            <div class="poster-caption">Comedy Underground with Dave Attell, <em>Comedy Central</em></div>
-                        </div>
-
-                        <div class="poster-frame">
-                            <img src="onceuponatime.jpeg" alt="Once Upon a Time in Brooklyn" width="1536" height="2048">
-                            <div class="poster-caption">Once Upon a Time in Brooklyn, <em>Independent</em></div>
-                        </div>
-                    </div>
+                <div class="oni-locations">
+                    <span class="oni-loc-pill">Los Angeles</span>
+                    <span class="oni-loc-pill">Atlanta</span>
+                    <span class="oni-loc-pill">New York City ✦ Coming Soon</span>
                 </div>
+
+                <a href="#announcement" class="oni-hero-cta">
+                    Read Nicky's Statement
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
             </div>
+
         </div>
-        <div class="hero-row-2">
-                <div class="imdb-button-container">
-                    <a href="https://www.imdb.com/name/nm2279741/" target="_blank" class="imdb-btn">
-                        <span class="imdb-logo">IMDb</span>
-                        <span class="imdb-text">View All Credits</span>
-                    </a>
+
+        <!-- Poster Marquee -->
+        <div class="hero-marquee-row">
+            <div class="poster-strip-container">
+                <div class="poster-strip marquee">
+                    <div class="poster-spacer"></div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BODAyYWFlY2EtMmJhNC00YmZjLWFkNjMtOThmYzBiYjNjNmFmXkEyXkFqcGc@._V1_SX300.jpg" alt="Murdaugh">
+                        <div class="poster-caption">Murdaugh: Death in the Family, <em>Hulu</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZDA3NmM4M2ItMGZkNi00MDMxLWI3M2EtMDE1YWEwYjc2M2Y0XkEyXkFqcGc@._V1_SX300.jpg" alt="Kindred">
+                        <div class="poster-caption">Kindred, <em>Hulu/FX</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZGYzYjA4NDktYzczOC00OTYwLThjOGEtOTIzY2U0OWRjMmM3XkEyXkFqcGc@._V1_SX300.jpg" alt="DMZ">
+                        <div class="poster-caption">DMZ, <em>HBO Max</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BODRlNTg4ODctNWQ1Ni00Zjg4LThmMWItMWVhOWU0YjQ4MGNkXkEyXkFqcGc@._V1_SX300.jpg" alt="Naomi">
+                        <div class="poster-caption">Naomi, <em>The CW</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="Brockmire.jpeg" alt="Brockmire">
+                        <div class="poster-caption">Brockmire, <em>IFC</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="MiracleWorkers.jpeg" alt="Miracle Workers">
+                        <div class="poster-caption">Miracle Workers, <em>TBS</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNGM4NzFlNWQtNmNmZS00YjUzLWFiMWUtNGE0YmZhNTcxODY4XkEyXkFqcGc@._V1_SX300.jpg" alt="Dead Money">
+                        <div class="poster-caption">Dead Money, <em>Hulu</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYjM3YmUzZmQtMTEwMy00ZTMzLTk2NjMtMzdjNWE4YTIwNTk0XkEyXkFqcGc@._V1_SX300.jpg" alt="Renaissance">
+                        <div class="poster-caption">Renaissance: A Film by Beyoncé, <em>Theatrical</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="The Oval">
+                        <div class="poster-caption">The Oval, <em>BET+</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDU3MTk5Y2UtNGZhYS00NzA3LWExMWUtNmVlZjRiMTg3MDY0XkEyXkFqcGc@._V1_SX300.jpg" alt="Dynasty">
+                        <div class="poster-caption">Dynasty, <em>The CW</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMmY2OGU4MmItOTg0Zi00NWUyLWI3YjgtOGJlMzFiNWQ5Mjg4XkEyXkFqcGc@._V1_SX300.jpg" alt="Mea Culpa">
+                        <div class="poster-caption">Tyler Perry's My Fault, <em>Netflix</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzQwNTkxZDMtYTVjYi00NmI5LTljNzgtMmJhYTU3NzI0ZjU2XkEyXkFqcGc@._V1_SX300.jpg" alt="Them">
+                        <div class="poster-caption">Them, <em>Prime Video</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOGI0ODc4MjAtZDA4Mi00ZGUyLTg2NmItYzhmZTJiYjM5Mjc1XkEyXkFqcGc@._V1_SX300.jpg" alt="Saturday Night Live">
+                        <div class="poster-caption">Saturday Night Live, <em>NBC</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOTNhZjNiNDMtNjQyNS00MzcxLTg3ODctNDhmMWU0OTkzNGI1XkEyXkFqcGc@._V1_SX300.jpg" alt="Just Beyond">
+                        <div class="poster-caption">Just Beyond, <em>Disney+</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYTQwYTY0NTItZTZiYi00ZWRiLThlYWMtZmIwZTM0ZjNmMDRiXkEyXkFqcGc@._V1_SX300.jpg" alt="Safety">
+                        <div class="poster-caption">Safety, <em>Disney+</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzAzNTUyNzYzNV5BMl5BanBnXkFtZTgwNjcwNzkwNTM@._V1_SX300.jpg" alt="Come Sunday">
+                        <div class="poster-caption">Come Sunday, <em>Netflix</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTUzOTQwNDA0OF5BMl5BanBnXkFtZTgwMDE1NDQxNjE@._V1_SX300.jpg" alt="Staten Island Summer">
+                        <div class="poster-caption">Staten Island Summer, <em>Paramount</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTU2ODI3ODEyOV5BMl5BanBnXkFtZTgwMTM3NTQzNDE@._V1_SX300.jpg" alt="Run All Night">
+                        <div class="poster-caption">Run All Night, <em>Warner Bros</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDEyNDU3NjcyNF5BMl5BanBnXkFtZTgwODcxMzg0ODE@._V1_SX300.jpg" alt="Margaret Cho: PsyCHO">
+                        <div class="poster-caption">Margaret Cho: PsyCHO, <em>Showtime</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="comedyunderground.jpeg" alt="Comedy Underground">
+                        <div class="poster-caption">Comedy Underground with Dave Attell, <em>Comedy Central</em></div>
+                    </div>
+
+                    <div class="poster-frame">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjE1MDA3NzEwOV5BMl5BanBnXkFtZTcwNjYzMzE2OQ@@._V1_SX300.jpg" alt="Once Upon a Time in Brooklyn">
+                        <div class="poster-caption">Once Upon a Time in Brooklyn, <em>Independent</em></div>
+                    </div>
+
                 </div>
+            </div>
+
+            <div class="imdb-button-container">
+                <a href="https://www.imdb.com/name/nm2279741/" target="_blank" class="imdb-btn">
+                    <span class="imdb-logo">IMDb</span>
+                    <span class="imdb-text">View All Credits</span>
+                </a>
+            </div>
         </div>
     </section>
 
-        <!-- About -->
-    <section id="about" class="about">
+
+    <!-- ====================================================
+         ANNOUNCEMENT
+    ===================================================== -->
+    <section id="announcement" class="oni-announcement">
+        <div class="oni-announcement-inner">
+            <div class="oni-announcement-text">
+                <h2 class="oni-announcement-title">
+                    A New Chapter with<br><em>Otto Nemenz International</em>
+                </h2>
+
+                <p class="oni-announcement-body">
+                    I'm proud to share with all of my friends and colleagues in the film industry that I am stepping away from the set and into the rental house. After more than <strong>twenty years</strong> behind the camera and <strong>twelve years as a camera assistant</strong> — on sets in the New York City and Atlanta market — I am genuinely excited to take on a new role.
+                </p>
+                <br>
+                <p class="oni-announcement-body">
+                    I've joined forces with <strong>Otto Nemenz International</strong>, a legendary Hollywood brand with a hard-earned reputation for reliable, world-class camera service in <strong>Los Angeles</strong> and <strong>Atlanta</strong>, and opening soon in <strong>New York City</strong>. My decision to join Otto came down to alignment — their values, their commitment to the people making films, and the opportunity to serve more of my community than I ever could from the set.
+                </p>
+                <br>
+                <p class="oni-announcement-body">
+                    I have taken an honorable withdrawal from <strong>Local 600</strong>. One day I may be back on set. But for the foreseeable future, I am loving this new role and I'm already connecting talented friends and colleagues with the equipment and service they need to unleash their cinematic vision. Whether you're prepping a feature, a series, or a passion project, <strong>I want to be part of your success story.</strong>
+                </p>
+                <br>
+                <p class="oni-announcement-body">
+                    Come see me. Get in touch. Let's talk cameras.
+                </p>
+
+                <img src="initials.png" alt="Nicky Dollars" class="oni-announcement-sig-img">
+            </div>
+
+            <div class="oni-announcement-photos">
+                <img src="photo10.jpg" alt="Nick Montalvo on set with camera">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ====================================================
+         ONI INFO BAND
+    ===================================================== -->
+    <div class="oni-band" id="oni-band">
+        <div class="oni-band-inner">
+            <div class="oni-band-about"><img src="logo_bw.png" alt="Otto Nemenz International" class="oni-band-logo">
+                <h3 class="oni-band-heading" style="text-align: center;">A legendary rental house.<br>Your production's best call.</h3>
+                <p class="oni-band-body">Otto Nemenz International has served Hollywood's top productions for almost five decades — from major studio features to prestige television. World-class camera packages. Exceptional service. Now with a growing footprint across three markets.</p>
+            </div>
+
+            <div class="oni-band-divider"></div>
+
+            <div class="oni-band-contact">
+                <p class="oni-band-label">Reach Nick Directly</p>
+                <a href="mailto:nmontalvo@ottonemenz.com" class="oni-band-email">nmontalvo@ottonemenz.com</a>
+                <a href="tel:770-559-3377" class="oni-band-email" style="font-size:1.1rem;">770-559-3377 · Atlanta Office</a>
+                <p class="oni-band-reach">Camera rentals · Inquiries · Consultations</p>
+                <div class="oni-band-offices">
+                    <span class="oni-office-tag">Los Angeles</span>
+                    <span class="oni-office-tag">Atlanta</span>
+                    <span class="oni-office-tag">New York City — Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====================================================
+         FEATURED WORK (videos — structure unchanged)
+    ===================================================== -->
+    <section id="work" class="featured-work">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">Collaborative 1st AC</h2>
-                    <div class="bio">
-                        <p><strong>Philosophy: We help each other.</strong></p>
-                        <p>I've spent over 20 years behind the camera learning one thing: the best images come from teamwork. I'm not trying to become a DP or an operator—I'm here to offer my technical expertise and execute, to make sure directors and cinematographers get the frames they're picturing in their heads.</p>
-                        
-                        <p>My job is simple: be prepared, stay focused, and give you as many usable frames as possible, as safely and efficiently as possible. Whether it's a full series run or a day-play, on a network series or an independent movie, I show up ready to support the vision.</p>
+            <h2 class="section-title">Nick's Featured AC Work</h2>
+            <div class="work-grid">
 
-                        <p>I started in the camera department in New York in 2013, learning the different digital camera systems working with the <em>Saturday Night Live</em> Film Unit. In 2016, I came home to Georgia and found myself right in the middle of Atlanta's film boom. I've been grateful to work alongside some incredible DPs and technicians ever since.</p>
-
-                        <p>Available for features, television, commercials, and documentaries. Ready to help bring your vision to screen.</p>
+                <!-- Murdaugh -->
+                <div class="work-item">
+                    <div class="work-content">
+                        <div class="work-info">
+                            <p class="role-credit">1ST AC B CAM</p>
+                            <span class="episode-count">8 EPISODES</span>
+                            <h3><em>Murdaugh: Death in the Family</em></h3>
+                            <p class="network">Hulu • 2025</p>
+                            <p class="dp">DPs: Matthew J. Lloyd, ASC, CSC; Roger Chingirian</p>
+                        </div>
+                        <div class="work-poster">
+                            <img src="https://m.media-amazon.com/images/M/MV5BODAyYWFlY2EtMmJhNC00YmZjLWFkNjMtOThmYzBiYjNjNmFmXkEyXkFqcGc@._V1_SX300.jpg" alt="Murdaugh poster" class="poster-thumb" loading="lazy">
+                        </div>
+                        <div class="work-video-container" data-video-id="ARUjuqwA-98" data-video-title="Murdaugh: Death in the Family">
+                            <img src="https://img.youtube.com/vi/ARUjuqwA-98/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
+                            <a href="https://www.youtube.com/watch?v=ARUjuqwA-98" target="_blank" class="play-button-overlay" data-desktop-link="true">
+                                ▶ Play
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="photo-placeholder">
-                        <img src="photo3.jpg" alt="Nick Montalvo" width="768" height="1024" loading="lazy">
+
+                <!-- DMZ -->
+                <div class="work-item">
+                    <div class="work-content">
+                        <div class="work-info">
+                            <p class="role-credit">1ST AC B CAM</p>
+                            <span class="episode-count">4 EPISODES</span>
+                            <h3><em>DMZ</em></h3>
+                            <p class="network">HBO Max</p>
+                            <p class="dp">DP: Matthew J. Lloyd, ASC, CSC</p>
+                        </div>
+                        <div class="work-poster">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZGYzYjA4NDktYzczOC00OTYwLThjOGEtOTIzY2U0OWRjMmM3XkEyXkFqcGc@._V1_SX300.jpg" alt="DMZ poster" class="poster-thumb" loading="lazy">
+                        </div>
+                        <div class="work-video-container" data-video-id="-upHEXsadmU" data-video-title="DMZ">
+                            <img src="https://img.youtube.com/vi/-upHEXsadmU/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
+                            <a href="https://www.youtube.com/watch?v=-upHEXsadmU" target="_blank" class="play-button-overlay" data-desktop-link="true">
+                                ▶ Play
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Kindred -->
+                <div class="work-item">
+                    <div class="work-content">
+                        <div class="work-info">
+                            <p class="role-credit">1ST AC B CAM</p>
+                            <span class="episode-count">8 EPISODES</span>
+                            <h3><em>Kindred</em></h3>
+                            <p class="network">Hulu / FX</p>
+                            <p class="dp">DPs: Cybel Martin, ASC; Anka Malatynska</p>
+                        </div>
+                        <div class="work-poster">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZDA3NmM4M2ItMGZkNi00MDMxLWI3M2EtMDE1YWEwYjc2M2Y0XkEyXkFqcGc@._V1_SX300.jpg" alt="Kindred poster" class="poster-thumb" loading="lazy">
+                        </div>
+                        <div class="work-video-container" data-video-id="II_mroKXF4o" data-video-title="Kindred">
+                            <img src="https://img.youtube.com/vi/II_mroKXF4o/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
+                            <a href="https://www.youtube.com/watch?v=II_mroKXF4o" target="_blank" class="play-button-overlay" data-desktop-link="true">
+                                ▶ Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Naomi -->
+                <div class="work-item">
+                    <div class="work-content">
+                        <div class="work-info">
+                            <p class="role-credit">1ST AC B CAM</p>
+                            <span class="episode-count">13 EPISODES</span>
+                            <h3><em>Naomi</em></h3>
+                            <p class="network">The CW</p>
+                            <p class="dp">DPs: Matthew J. Lloyd, ASC, CSC; Cliff Charles</p>
+                        </div>
+                        <div class="work-poster">
+                            <img src="https://m.media-amazon.com/images/M/MV5BODRlNTg4ODctNWQ1Ni00Zjg4LThmMWItMWVhOWU0YjQ4MGNkXkEyXkFqcGc@._V1_SX300.jpg" alt="Naomi poster" class="poster-thumb" loading="lazy">
+                        </div>
+                        <div class="work-video-container" data-video-id="Yl78kBbNjl4" data-video-title="Naomi">
+                            <img src="https://img.youtube.com/vi/Yl78kBbNjl4/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
+                            <a href="https://www.youtube.com/watch?v=Yl78kBbNjl4" target="_blank" class="play-button-overlay" data-desktop-link="true">
+                                ▶ Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brockmire -->
+                <div class="work-item">
+                    <div class="work-content">
+                        <div class="work-info">
+                            <p class="role-credit">1ST AC</p>
+                            <span class="episode-count">SEASON 3 · 8 EPISODES</span>
+                            <h3><em>Brockmire</em></h3>
+                            <p class="network">IFC</p>
+                            <p class="dp">DP: Adam Bricker, ASC</p>
+                        </div>
+                        <div class="work-poster">
+                            <img src="Brockmire.jpeg" alt="Brockmire poster" class="poster-thumb" loading="lazy">
+                        </div>
+                        <div class="work-video-container" data-video-id="vt4IiGtyuTs" data-video-title="Brockmire">
+                            <img src="https://img.youtube.com/vi/vt4IiGtyuTs/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
+                            <a href="https://www.youtube.com/watch?v=vt4IiGtyuTs" target="_blank" class="play-button-overlay" data-desktop-link="true">
+                                ▶ Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miracle Workers -->
+                <div class="work-item">
+                    <div class="work-content">
+                        <div class="work-info">
+                            <p class="role-credit">1ST AC A CAM</p>
+                            <span class="episode-count">ADDITIONAL PHOTOGRAPHY · SEASON 1</span>
+                            <h3><em>Miracle Workers</em></h3>
+                            <p class="network">TBS • 2019</p>
+                            <p class="dp">DP: Timothy A. Burton (Additional Photography)</p>
+                        </div>
+                        <div class="work-poster">
+                            <img src="MiracleWorkers.jpeg" alt="Miracle Workers poster" class="poster-thumb" loading="lazy">
+                        </div>
+                        <div class="work-video-container" data-video-id="zlyOoGg6mEg" data-video-title="Miracle Workers">
+                            <img src="https://img.youtube.com/vi/zlyOoGg6mEg/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
+                            <a href="https://www.youtube.com/watch?v=zlyOoGg6mEg" target="_blank" class="play-button-overlay" data-desktop-link="true">
+                                ▶ Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Renaissance -->
+                <div class="work-item">
+                    <div class="work-content">
+                        <div class="work-info">
+                            <p class="role-credit">1ST AC C CAM · ATLANTA UNIT</p>
+                            <span class="episode-count">THEATRICAL FEATURE</span>
+                            <h3><em>Renaissance: A Film by Beyoncé</em></h3>
+                            <p class="network">Theatrical • 2023</p>
+                            <p class="dp">DP: David Farkas</p>
+                        </div>
+                        <div class="work-poster">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYjM3YmUzZmQtMTEwMy00ZTMzLTk2NjMtMzdjNWE4YTIwNTk0XkEyXkFqcGc@._V1_SX300.jpg" alt="Renaissance poster" class="poster-thumb" loading="lazy">
+                        </div>
+                        <div class="work-video-container" data-video-id="AqjPzq3uYXQ" data-video-title="Renaissance: A Film by Beyoncé">
+                            <img src="https://img.youtube.com/vi/AqjPzq3uYXQ/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
+                            <a href="https://www.youtube.com/watch?v=AqjPzq3uYXQ" target="_blank" class="play-button-overlay" data-desktop-link="true">
+                                ▶ Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dead Money -->
+                <div class="work-item">
+                    <div class="work-content">
+                        <div class="work-info">
+                            <p class="role-credit">1ST AC A CAM</p>
+                            <span class="episode-count">FEATURE FILM</span>
+                            <h3><em>Dead Money</em></h3>
+                            <p class="network">Hulu • 2024</p>
+                            <p class="dp">DP: Ivan Abel</p>
+                        </div>
+                        <div class="work-poster">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNGM4NzFlNWQtNmNmZS00YjUzLWFiMWUtNGE0YmZhNTcxODY4XkEyXkFqcGc@._V1_SX300.jpg" alt="Dead Money poster" class="poster-thumb" loading="lazy">
+                        </div>
+                        <div class="work-video-container" data-video-id="pVP2KMrq0qI" data-video-title="Dead Money">
+                            <img src="https://img.youtube.com/vi/pVP2KMrq0qI/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
+                            <a href="https://www.youtube.com/watch?v=pVP2KMrq0qI" target="_blank" class="play-button-overlay" data-desktop-link="true">
+                                ▶ Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="videoModal" class="video-modal">
+            <div class="modal-close">&times;</div>
+            <div class="modal-video-container">
+                <iframe id="modalVideoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-<!-- Featured Work -->
-<section id="work" class="featured-work">
-    <div class="container">
-        <h2 class="section-title">Featured Work</h2>            
-        <div class="work-grid">
-            
-            <!-- Murdaugh -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC B CAM</p>
-                        <span class="episode-count">8 EPISODES</span>
-                        <h3><em>Murdaugh: Death in the Family</em></h3>
-                        <p class="network">Hulu • 2025</p>
-                        <p class="dp">DPs: Matthew J. Lloyd, ASC, CSC; Roger Chingirian</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="Murdaugh.jpg" alt="Murdaugh poster" class="poster-thumb" loading="lazy" width="810" height="1200">
-                    </div>
-                    <div class="work-video-container" data-video-id="ARUjuqwA-98" data-video-title="Murdaugh: Death in the Family">
-                        <img src="https://img.youtube.com/vi/ARUjuqwA-98/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=ARUjuqwA-98" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <!-- ====================================================
+         BTS
+    ===================================================== -->
+    <section id="bts" class="bts-slideshow">
+        <div class="container">
+            <h2 class="section-title">Behind the Scenes</h2>
+        </div>
 
-            <!-- DMZ -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC B CAM</p>
-                        <span class="episode-count">4 EPISODES</span>
-                        <h3><em>DMZ</em></h3>
-                        <p class="network">HBO Max • 2022</p>
-                        <p class="dp">DP: Matthew J. Lloyd, ASC, CSC</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="DMZ.jpeg" alt="DMZ poster" class="poster-thumb" loading="lazy" width="948" height="1394">
-                    </div>
-                    <div class="work-video-container" data-video-id="a7RTnRVgLmo" data-video-title="DMZ">
-                        <img src="https://img.youtube.com/vi/a7RTnRVgLmo/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=a7RTnRVgLmo" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+        <div class="bts-gallery">
+            <div class="bts-thumb">
+                <img src="photo4.jpg" alt="Nick pulling focus" width="1024" height="768" loading="lazy">
+                <div class="caption">B camera team for <em>Murdaugh: Death in the Family</em> for Hulu. Nick Montalvo, 1st AC; Alex Galvez, 2nd AC; Amber Bournett-McClain, Operator</div>
             </div>
-
-            <!-- Kindred -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC B CAM</p>
-                        <span class="episode-count">8 EPISODES</span>
-                        <h3><em>Kindred</em></h3>
-                        <p class="network">Hulu/FX • 2022</p>
-                        <p class="dp">DPs: Cybel Martin, ASC; Anka Malatynska</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="Kindred.jpeg" alt="Kindred poster" class="poster-thumb" loading="lazy" width="964" height="1400">
-                    </div>
-                    <div class="work-video-container" data-video-id="II_mroKXF4o" data-video-title="Kindred">
-                        <img src="https://img.youtube.com/vi/II_mroKXF4o/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=II_mroKXF4o" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="bts-thumb">
+                <img src="photo5.jpg" alt="Nick with equipment" width="1500" height="2000" loading="lazy">
+                <div class="caption">Camera Prep for <em>Renaissance: A Film by Beyoncé</em> Atlanta Unit</div>
             </div>
-
-            <!-- Brockmire -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC A CAM</p>
-                        <span class="episode-count">SEASON 3 • 8 EPISODES</span>
-                        <h3><em>Brockmire</em></h3>
-                        <p class="network">IFC • 2019</p>
-                        <p class="dp">DP: Adam Bricker, ASC</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="Brockmire.jpeg" alt="Brockmire poster" class="poster-thumb" loading="lazy" width="971" height="1382">
-                    </div>
-                    <div class="work-video-container" data-video-id="vt4IiGtyuTs" data-video-title="Brockmire">
-                        <img src="https://img.youtube.com/vi/vt4IiGtyuTs/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=vt4IiGtyuTs" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="bts-thumb">
+                <img src="photo11.jpg" alt="Nick pulling focus" width="1886" height="1188" loading="lazy">
+                <div class="caption">BTS of <em>Murdaugh: Death in the Family</em> for Hulu. Photo by Daniel Delgado</div>
             </div>
-
-            <!-- Miracle Workers -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC A CAM</p>
-                        <span class="episode-count">ADDITIONAL PHOTOGRAPHY • SEASON 1</span>
-                        <h3><em>Miracle Workers</em></h3>
-                        <p class="network">TBS • 2019</p>
-                        <p class="dp">DP: Timothy A. Burton (Additional Photography)</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="MiracleWorkers.jpeg" alt="Miracle Workers poster" class="poster-thumb" loading="lazy" width="1040" height="1556">
-                    </div>
-                    <div class="work-video-container" data-video-id="zlyOoGg6mEg" data-video-title="Miracle Workers">
-                        <img src="https://img.youtube.com/vi/zlyOoGg6mEg/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=zlyOoGg6mEg" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="bts-thumb">
+                <img src="photo2.jpg" alt="Nick with camera" width="1182" height="665" loading="lazy">
+                <div class="caption">BTS of <em>Be Happy</em> for Lifetime. Photo by Christian Ortega</div>
             </div>
-
-            <!-- Naomi -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC B CAM</p>
-                        <span class="episode-count">13 EPISODES</span>
-                        <h3><em>Naomi</em></h3>
-                        <p class="network">The CW • 2022</p>
-                        <p class="dp">DPs: Matthew J. Lloyd, ASC, CSC; Cliff Charles</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="Naomi.jpeg" alt="Naomi poster" class="poster-thumb" loading="lazy" width="1122" height="1398">
-                    </div>
-                    <div class="work-video-container" data-video-id="Yl78kBbNjl4" data-video-title="Naomi">
-                        <img src="https://img.youtube.com/vi/Yl78kBbNjl4/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=Yl78kBbNjl4" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="bts-thumb">
+                <img src="photo8.jpg" alt="Nick with Amber" width="1280" height="960" loading="lazy">
+                <div class="caption">BTS of <em>Kindred</em> for Hulu with operator Amber Bournett-McClain</div>
             </div>
-
-            <!-- Renaissance -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC C CAM</p>
-                        <span class="episode-count">ATLANTA UNIT</span>
-                        <h3><em>Renaissance: A Film by Beyoncé</em></h3>
-                        <p class="network">Theatrical Release • 2023</p>
-                        <p class="dp">DP: David Farkas</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="Renaissance-Beyonce.jpeg" alt="Renaissance poster" class="poster-thumb" loading="lazy" width="600" height="927">
-                    </div>
-                    <div class="work-video-container" data-video-id="AqjPzq3uYXQ" data-video-title="Renaissance: A Film by Beyoncé">
-                        <img src="https://img.youtube.com/vi/AqjPzq3uYXQ/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=AqjPzq3uYXQ" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="bts-thumb">
+                <img src="photo9.jpg" alt="Camera rig" width="886" height="886" loading="lazy">
+                <div class="caption">Low-angle camera build for <em>Rescued By Faith</em> for Lifetime</div>
             </div>
-
-            <!-- Dead Money -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC A CAM</p>
-                        <span class="episode-count">FEATURE FILM</span>
-                        <h3><em>Dead Money</em></h3>
-                        <p class="network">Hulu • 2024</p>
-                        <p class="dp">DP: Ivan Abel</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="DeadMoney.jpg" alt="Dead Money poster" class="poster-thumb" loading="lazy" width="974" height="1388">
-                    </div>
-                    <div class="work-video-container" data-video-id="pVP2KMrq0qI" data-video-title="Dead Money">
-                        <img src="https://img.youtube.com/vi/pVP2KMrq0qI/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=pVP2KMrq0qI" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="bts-thumb">
+                <img src="photo7.jpg" alt="Nick at night" width="1500" height="2000" loading="lazy">
+                <div class="caption">BTS of <em>Caught Up</em> for BET+</div>
             </div>
-
-            <!-- Mea Culpa -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC A CAM</p>
-                        <span class="episode-count">2ND UNIT • FEATURE FILM</span>
-                        <h3><em>Mea Culpa</em></h3>
-                        <p class="network">Netflix • 2024</p>
-                        <p class="dp">DP: Cory Burmester</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="MeaCulpa.jpeg" alt="Mea Culpa poster" class="poster-thumb" loading="lazy" width="900" height="1357">
-                    </div>
-                    <div class="work-video-container" data-video-id="-p0g9YfjJSA" data-video-title="Mea Culpa">
-                        <img src="https://img.youtube.com/vi/-p0g9YfjJSA/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=-p0g9YfjJSA" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="bts-thumb">
+                <img src="photo13.jpg" alt="Oval Crew Photo" width="1228" height="691" loading="lazy">
+                <div class="caption">Camera team for <em>Tyler Perry's The Oval,</em> Season 6</div>
             </div>
-
-            <!-- The Oval -->
-            <div class="work-item">
-                <div class="work-content">
-                    <div class="work-info">
-                        <p class="role-credit">1ST AC A CAM</p>
-                        <span class="episode-count">SEASON 6 • 16 EPISODES</span>
-                        <h3><em>The Oval</em></h3>
-                        <p class="network">BET+ • 2025</p>
-                        <p class="dp">DP: Matt Clegg</p>
-                    </div>
-                    <div class="work-poster">
-                        <img src="TheOval.jpg" alt="The Oval poster" class="poster-thumb" loading="lazy" width="1920" height="2880">
-                    </div>
-                    <div class="work-video-container" data-video-id="6PvpKaajyQU" data-video-title="The Oval">
-                        <img src="https://img.youtube.com/vi/6PvpKaajyQU/mqdefault.jpg" alt="Video thumbnail" class="video-thumbnail" loading="lazy" width="320" height="180">
-                        <a href="https://www.youtube.com/watch?v=6PvpKaajyQU" target="_blank" class="play-button-overlay" data-desktop-link="true">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 8 5 L 24 15 L 8 25 Q 6 26 6 24 L 6 6 Q 6 5 8 5" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="bts-thumb">
+                <img src="photo14.jpg" alt="Low Angle Prism" width="1344" height="1008" loading="lazy">
+                <div class="caption">Low-angle prism set up for <em>Them: The Scare (S2)</em> for Amazon</div>
+            </div>
+            <div class="bts-thumb">
+                <img src="photo18.jpg" alt="Overhead inserts" width="768" height="1024" loading="lazy">
+                <div class="caption">Rigging overhead inserts safely for <em>Kindred</em> for Hulu</div>
+            </div>
+            <div class="bts-thumb">
+                <img src="photo16.jpg" alt="On Stage with Beyonce" width="1344" height="1008" loading="lazy">
+                <div class="caption">Night 3 of filming <em>Renaissance</em> in Atlanta with operator Garrette Warner Rose for on-stage coverage</div>
+            </div>
+            <div class="bts-thumb">
+                <img src="photo19.jpg" alt="SNL" width="1600" height="1236" loading="lazy">
+                <div class="caption">Crew photo from <em>Saturday Night Live</em> Film Unit, 2014</div>
             </div>
         </div>
-    </div>
-    <div id="videoModal" class="video-modal">
-        <div class="modal-close">&times;</div>
-        <div class="modal-video-container">
-            <iframe id="modalVideoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
+    </section>
 
-
-<!-- BTS Photo Gallery -->
-<section id="bts" class="bts-slideshow">
-    <div class="container">
-        <h2 class="section-title">Behind the Scenes</h2>
-    </div>
-    
-    <div class="bts-gallery">
-        <div class="bts-thumb">
-            <img src="photo4.jpg" alt="Nick pulling focus" width="1024" height="768" loading="lazy"> 
-            <div class="caption">B camera team for <em>Murdaugh: Death in the Family</em> for Hulu. Nick Montalvo, 1st AC; Alex Galvez, 2nd AC; Amber Bournett-McClain, Operator</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo5.jpg" alt="Nick with equipment" width="1500" height="2000" loading="lazy">
-            <div class="caption">Camera Prep for <em>Renaissance: A Film by Beyoncé</em> Atlanta Unit</div>
-        </div>
-        
-        <div class="bts-thumb">
-            <img src="photo11.jpg" alt="Nick pulling focus" width="1886" height="1188" loading="lazy">
-            <div class="caption">BTS of <em>Murdaugh: Death in the Family</em> for Hulu. Photo by Daniel Delgado</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo2.jpg" alt="Nick with camera" width="1182" height="665" loading="lazy">
-            <div class="caption">BTS of <em>Be Happy</em> for Lifetime. Photo by Christian Ortega</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo8.jpg" alt="Nick with Amber" width="1280" height="960" loading="lazy">
-            <div class="caption">BTS of <em>Kindred</em> for Hulu with operator Amber Bournett-McClain</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo9.jpg" alt="Camera rig" width="886" height="886" loading="lazy">
-            <div class="caption">Low-angle camera build for <em>Rescued By Faith</em> for Lifetime.</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo7.jpg" alt="Nick at night" width="1500" height="2000" loading="lazy">
-            <div class="caption">BTS of <em>Caught Up</em> for BET+</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo13.jpg" alt="Oval Crew Photo" width="1228" height="691" loading="lazy">
-            <div class="caption">Camera team for <em>Tyler Perry's The Oval,</em> Season 6</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo14.jpg" alt="Low Angle Prism" width="1344" height="1008" loading="lazy">
-            <div class="caption">Low-angle prism set up for <em>Them: The Scare (S2)</em> for Amazon</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo18.jpg" alt="Overhead inserts" width="768" height="1024" loading="lazy">
-            <div class="caption">Rigging overhead inserts safely for <em>Kindred</em> for Hulu</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo16.jpg" alt="On Stage with Beyonce" width="1344" height="1008" loading="lazy">
-            <div class="caption">Night 3 of filming <em>Renaissance</em> in Atlanta with operator Garrette Warner Rose for on-stage coverage</div>
-        </div>
-
-        <div class="bts-thumb">
-            <img src="photo19.jpg" alt="SNL" width="1600" height="1236" loading="lazy"> 
-            <div class="caption">Crew photo from <em>Saturday Night Live</em> Film Unit, 2014</div>
-        </div>
-    </div>
-</section>
-
-    <!-- Photo Modal for BTS Images -->
+    <!-- Photo Modal -->
     <div id="photoModal" class="photo-modal">
         <span class="modal-close">&times;</span>
         <img class="modal-photo" id="modalImg" alt="BTS Photo">
         <div id="modalCaption" class="modal-photo-caption"></div>
     </div>
 
-
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Available for features, television, commercials, and documentaries</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-item social-links">
-                        <h3>Connect</h3>
-                        <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/nick-montalvo" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/atlanta1stac" target="_blank" rel="noopener" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-    
-                <div class="info-item">
-                        <h3>Email</h3>
-                        <p><a href="mailto:nick@atlanta1stac.com">nick@atlanta1stac.com</a></p>
-                    </div>
-                    <div class="info-item">
-                        <h3>Phone</h3>
-                        <p><a href="tel:706-461-6425">706-461-6425</a></p>
-                    </div>
-                    <div class="info-item">
-                        <h3>Location</h3>
-                        <p>Atlanta, GA</p>
-                    </div>
-                    <div class="info-item">
-                        <h3>IMDB</h3>
-                        <p><a href="https://www.imdb.com/name/nm2279741/" target="_blank" rel="noopener">View Full Credits</a></p>
-                    </div>
-                </div>   
-                
-                <form class="contact-form" id="contactForm" action="https://formspree.io/f/maqyleqv" method="POST" autocomplete="off">
-                    
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-                    
-                    <div class="form-row">
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-                    </div>
-                    
-                    <input type="text" name="role" placeholder="What do you do? (DP, UPM, Director, etc.)" required>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Best way to reach you:</label>
-                            <div class="radio-group">
-                                <label class="radio-option">
-                                    <input type="radio" name="contact_method" value="text" required>
-                                    <span>Text</span>
-                                </label>
-                                <label class="radio-option">
-                                    <input type="radio" name="contact_method" value="email" required>
-                                    <span>Email</span>
-                                </label>
-                                <label class="radio-option">
-                                    <input type="radio" name="contact_method" value="call" required>
-                                    <span>Call</span>
-                                </label>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Best time to reach you:</label>
-                            <div class="radio-group">
-                                <label class="radio-option">
-                                    <input type="radio" name="time_preference" value="asap" required>
-                                    <span>ASAP</span>
-                                </label>
-                                <label class="radio-option">
-                                    <input type="radio" name="time_preference" value="daytime" required>
-                                    <span>Daytime</span>
-                                </label>
-                                <label class="radio-option">
-                                    <input type="radio" name="time_preference" value="evening" required>
-                                    <span>Evening</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <textarea id="message" name="message" placeholder="How can I help you with your next project?" rows="5" required></textarea>
-                    <div class="g-recaptcha" data-sitekey="6LeL8QUtAAAAAGE_2PavT9oif0QPaw6iwwafs9Rh"></div>
-                    <button type="submit" class="primary-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Nick Montalvo</p>
+            <p>&copy; 2026 Nick Montalvo · Representative, Otto Nemenz International</p>
         </div>
     </footer>
 

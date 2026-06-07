@@ -176,6 +176,8 @@ function setupPlayButtonModal() {
 
     videoContainers.forEach(container => {
         container.addEventListener('click', function(e) {
+            const playBtn = e.target.closest('.play-button-overlay');
+            if (!playBtn) return;
             if (window.innerWidth >= 969) {
                 e.preventDefault();
                 const videoId = this.dataset.videoId;
