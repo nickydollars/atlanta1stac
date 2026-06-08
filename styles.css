@@ -349,12 +349,11 @@ body {
     left: 0;
     display: flex;
     gap: 15px;
-    animation: posterScroll 72s linear infinite;
+    animation: posterScroll 35s linear infinite;
     will-change: transform;
     cursor: grab;
     transform: translateZ(0);
     opacity: 1;
-    transition: opacity 1.5s ease-in;
 }
 
 .poster-strip:active {
