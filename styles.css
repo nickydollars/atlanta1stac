@@ -349,7 +349,7 @@ body {
     left: 0;
     display: flex;
     gap: 15px;
-    animation: posterScroll 35s linear infinite;
+    animation: posterScroll 55s linear infinite;
     will-change: transform;
     cursor: grab;
     transform: translateZ(0);
